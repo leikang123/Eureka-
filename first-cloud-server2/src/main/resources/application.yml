@@ -1,0 +1,13 @@
+
+server:
+  port: 8762
+spring:
+  application:
+    name: first-cloud-server2
+  profiles: slave2
+eureka:
+  instance:
+    hostname: slave2
+  client:
+    serviceUrl:
+      defaultZone: http://slave1:8761/eureka/
